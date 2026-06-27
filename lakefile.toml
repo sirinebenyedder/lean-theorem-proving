@@ -1,0 +1,10 @@
+name = "DemoMaster"
+version = "0.1.0"
+defaultTargets = ["DemoMaster"]
+
+[[lean_lib]]
+name = "DemoMaster"
+
+[[lean_exe]]
+name = "demomaster"
+root = "Main"
