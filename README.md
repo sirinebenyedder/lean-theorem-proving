@@ -37,7 +37,7 @@ This repository contains basic formal proofs and recursive definitions:
 Proof of the formula:
 
 \[
-1 + 2 + \dots + n = \frac{n(n+1)}{2}
+1 + 2 + ..... + n = \frac{n(n+1)}{2}
 \]
 
 - uses recursion
