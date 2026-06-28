@@ -28,40 +28,17 @@ Formal methods aim to:
 
 ---
 
+## Contents
 
-## Contents of This Project
-
-This repository contains basic formal proofs and recursive definitions:
-
-### 1. Gauss Summation Theorem
-Proof of the formula:
-
-\[
-1 + 2 + ..... + n = \frac{n(n+1)}{2}
-\]
-
-- uses recursion
-- proven using mathematical induction
-- includes executable evaluation
-
----
-
-### 2. Fibonacci Function
-Definition and correctness property of Fibonacci numbers:
-
-- recursive definition
-- formal proof of recurrence consistency
+| Module | What is proved | Technique |
+|--------|---------------|-----------|
+| **Gauss Summation** | `2 * (1 + 2 + … + n) = n * (n + 1)` | Recursive definition, proved by induction |
+| **Fibonacci** | Recurrence consistency `fib(n+2) = fib(n+1) + fib(n)` | Recursive definition, proved by reflexivity |
+| **Vector & List Properties** | `map` preserves length, `map` composition, `foldl` distributes over append, type-indexed `Vec` with map-map fusion | Structural induction on lists and custom vectors |
+| **Formalized Neuron** | Dot product, threshold activation, zero-weight theorem | Definition + `simp`-based proofs |
 
 ---
 
 ## Purpose
 
-This project is part of my learning journey in:
-- formal methods
-- mathematical logic
-- theorem proving systems
-
-It shows how abstract mathematical concepts can be implemented and verified using Lean.
-
----
-
+This project is part of my learning journey in formal methods, mathematical logic, and theorem proving systems.
